@@ -1,24 +1,54 @@
 <div class="third">
-    <div class="container container--2">
-        <h1 class="h1">
-            <div class="h1__monochrome">Мастер на&nbsp;все руки</div>
-            <div class="h1__color">в Белгороде и&nbsp;области</div>
-        </h1>
-        <p class="first__text">Мы решим вашу проблему.</p>
-        <p class="first__text">Один звонок, и никаких забот!</p>
-        <div class="calculator flexbox">
-            <include src="icon-calc.html"></include>
-            <div class="calculator__text">Расчёт стоимости работ</div>
+    <div class="estimate">
+        <div class="estimate__form">
+            <form>
+                <div class="container container--1">
+                    <div class="flexbox estimate__flexbox">
+                        <div class="estimate__title">Быстрая оценка</div>
+                        <div class="estimate__error">Укажите ваше имя</div>
+                    </div>
+                    <div class="flexbox estimate__flexbox">
+                        <input type="text" name="name" placeholder="имя" class="input estimate__input">
+                        <input type="tel" name="phone" placeholder="телефон" class="input estimate__input">
+                    </div>
+                    <div class="flexbox">
+                        <textarea name="comment" placeholder="опишите проблему" class="textarea estimate__textarea"></textarea>
+                    </div>
+                </div>
+                <div class="upload">
+                    <div class="container container--2">
+                        <label class="upload__label" for="upload">
+                            <input type="file" name="upload" id="upload" class="input upload__file" data-count="{count}">
+                            <div class="upload__tip">
+                                Вы можете <span class="upload__dotted">приложить фото</span>, это поможет нам более точно оценить проблему
+                            </div>
+                        </label>
+                        <div class="upload__text">No file chosen</div>
+                    </div>
+                    <div class="container container--1">
+                        <button type="submit" class="button estimate__button"">Оценить стоимость</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
-    <div class="container container--1">
-        <include src="call-master.html"></include>
-    </div>
-    <include src="slider.html"></include>
-    <div class="triangle">
-        <img class="triangle__lightning" src="img/lightning.svg" alt="">
-        <div class="triangle__caution">Осторожно!</div>
-        <div class="triangle__profi">Высокий <br />профессионализм</div>
-        <div class="triangle__danger">Опасно для поломок!</div>
+    <div class="container container--2">
+        <div class="features features--third flexbox">
+            <div class="features__item">
+                <img src="img/icon-features-4.svg" class="features__img" alt="">
+                <div class="features__title">Удобный график</div>
+                <div class="features__text">Работаем без выходных и праздников. Готовы приехать в удобное Вам время</div>
+            </div>
+            <div class="features__item">
+                <img src="img/icon-features-5.svg" class="features__img" alt="">
+                <div class="features__title">Без предоплат</div>
+                <div class="features__text">Вы оплачиваете только  выполненные работы (или отработанные часы факту)</div>
+            </div>
+            <div class="features__item">
+                <img src="img/icon-features-6.svg" class="features__img" alt="">
+                <div class="features__title">Можем всё</div>
+                <div class="features__text">Починим всё что сломалось&nbsp;у&nbsp;вас дома</div>
+            </div>
+        </div>
     </div>
 </div>

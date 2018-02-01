@@ -12,7 +12,6 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify'),
     cssnext = require('postcss-cssnext'),
-    resemble_image = require('postcss-resemble-image').default,
     imagemin = require('gulp-imagemin'),
     connect = require('gulp-connect');
 
@@ -32,7 +31,6 @@ var paths = {
 }
 
 var pluginspostcss = [
-    resemble_image({selectors: ['.resemble_image'], fidelity: '25%'}),
     cssnext()
 ];
 

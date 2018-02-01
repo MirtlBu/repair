@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="376" height="417.188" viewBox="0 0 376 417.188">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+<?xpacket end="w"?></metadata>
+<defs id="defs4636">
+    <linearGradient
+       id="PSgrad_0"
+       x1="0"
+       x2="179.20746"
+       y1="151.70818"
+       y2="1.3338268"
+       gradientTransform="matrix(1.3678716,0,0,0.73106277,0,-0.97511111)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="rgb(198,181,62)"
+         stop-opacity="1"
+         id="stop4639" />
+      <stop
+         offset="100%"
+         stop-color="rgb(126,171,86)"
+         stop-opacity="1"
+         id="stop4641" />
+    </linearGradient>
+  </defs>
+  <path
+     d="M763,314s213.957-.43,213.016,0S975.062,557,975,557h164V731H763V314Z" transform="translate(-763 -313.812)"
+     style="fill:#6d9a59;fill-rule:evenodd" />
+  <path
+     d="M763,314s213.957-.43,213.016,0S975.062,557,975,557h164V731H763V314Z" transform="translate(-763 -313.812)"
+     style="fill:url(#PSgrad_0)" />
+</svg>

@@ -1,54 +1,55 @@
-<div class="third">
-    <div class="estimate">
-        <div class="estimate__form">
-            <form>
-                <div class="container container--1">
-                    <div class="flexbox estimate__flexbox">
-                        <div class="estimate__title">Быстрая оценка</div>
-                        <div class="estimate__error">Укажите ваше имя</div>
+<div class="third section flexbox">
+    <div class="estimate flexbox">
+        <div class="estimate__man">
+            <div class="form estimate__form">
+                <form>
+                    <div class="">
+                        <div class="flexbox estimate__header">
+                            <div class="estimate__title">Быстрая оценка</div>
+                            <div class="estimate__error">Укажите ваше имя</div>
+                        </div>
+                        <div class="flexbox estimate__inputs">
+                            <input type="text" name="name" placeholder="имя" class="input estimate__input">
+                            <input type="tel" name="phone" placeholder="телефон" class="input estimate__input">
+                        </div>
+                        <div class="flexbox">
+                            <textarea name="comment" placeholder="опишите проблему" class="textarea estimate__textarea"></textarea>
+                        </div>
                     </div>
-                    <div class="flexbox estimate__flexbox">
-                        <input type="text" name="name" placeholder="имя" class="input estimate__input">
-                        <input type="tel" name="phone" placeholder="телефон" class="input estimate__input">
+                    <div class="upload">
+                        <div class="upload__handler">
+                            <label class="upload__label" for="upload">
+                                <input type="file" name="upload" id="upload" class="input upload__file" data-count="{count}">
+                                <div class="upload__tip">
+                                    Вы можете <span class="upload__dotted">приложить фото</span>, это поможет нам более точно оценить проблему
+                                </div>
+                            </label>
+                            <div class="upload__text">No file chosen</div>
+                        </div>
+                        <div class="flexbox flexbox--right">
+                            <button type="submit" class="button button--light estimate__button""><span class="button__text">Оценить стоимость</span></button>
+                        </div>
                     </div>
-                    <div class="flexbox">
-                        <textarea name="comment" placeholder="опишите проблему" class="textarea estimate__textarea"></textarea>
-                    </div>
-                </div>
-                <div class="upload">
-                    <div class="container container--2">
-                        <label class="upload__label" for="upload">
-                            <input type="file" name="upload" id="upload" class="input upload__file" data-count="{count}">
-                            <div class="upload__tip">
-                                Вы можете <span class="upload__dotted">приложить фото</span>, это поможет нам более точно оценить проблему
-                            </div>
-                        </label>
-                        <div class="upload__text">No file chosen</div>
-                    </div>
-                    <div class="container container--1">
-                        <button type="submit" class="button estimate__button"">Оценить стоимость</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-    <div class="container container--2">
-        <div class="features features--third flexbox">
-            <div class="features__item">
-                <img src="img/icon-features-4.svg" class="features__img" alt="">
-                <div class="features__title">Удобный график</div>
-                <div class="features__text">Работаем без выходных и праздников. Готовы приехать в удобное Вам время</div>
-            </div>
-            <div class="features__item">
-                <img src="img/icon-features-5.svg" class="features__img" alt="">
-                <div class="features__title">Без предоплат</div>
-                <div class="features__text">Вы оплачиваете только  выполненные работы (или отработанные часы факту)</div>
-            </div>
-            <div class="features__item">
-                <img src="img/icon-features-6.svg" class="features__img" alt="">
-                <div class="features__title">Можем всё</div>
-                <div class="features__text">Починим всё что сломалось&nbsp;у&nbsp;вас дома</div>
+                </form>
             </div>
         </div>
     </div>
+    <div class="features-2 flexbox">
+        <div class="features-2__item">
+            <img src="img/icon-features-4.svg" class="features-2__img" alt="">
+            <div class="features-2__title">Удобный график</div>
+            <div class="features-2__text">Работаем без выходных и праздников. Готовы приехать в удобное Вам время</div>
+        </div>
+        <div class="features-2__item">
+            <img src="img/icon-features-5.svg" class="features-2__img" alt="">
+            <div class="features-2__title">Без предоплат</div>
+            <div class="features-2__text">Вы оплачиваете только  выполненные работы (или отработанные часы факту)</div>
+        </div>
+        <div class="features-2__item">
+            <img src="img/icon-features-6.svg" class="features-2__img" alt="">
+            <div class="features-2__title">Можем всё</div>
+            <div class="features-2__text">Починим всё что сломалось&nbsp;у&nbsp;вас дома</div>
+        </div>
+    </div>
+    
 </div>

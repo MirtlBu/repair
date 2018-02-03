@@ -1901,34 +1901,37 @@ ul, li {
 }
 
 .faq {
-    padding-left: 27px;
-    padding-right: 25px;
-    padding-top: 236px;
-    background-color: var(--logo-background-color);
-    position: relative;
 
-    @media (width >= 1024px) {
-        padding-top: 138px;
-        padding-bottom: 95px;
-    }
+    &__content {
+        padding-left: 27px;
+        padding-right: 25px;
+        padding-top: 236px;
+        background-color: var(--logo-background-color);
+        position: relative;
 
-    @media (width >= 1200px) {
-        width: 80%;
-        height: 512px;
-        padding-top: 24px;
-        padding-left: 48px;
-        box-sizing: border-box;
-        padding-right: 48px;
-        padding-bottom: 0;
-    }
+        @media (width >= 1024px) {
+            padding-top: 138px;
+            padding-bottom: 95px;
+        }
 
-    @media (width >= 1900px) {
-        width: 872px;
-        padding-top: 30px;
-        padding-left: 100px;
-        padding-right: 110px;
-        padding-bottom: 0;
+        @media (width >= 1200px) {
+            width: 80%;
+            height: 512px;
+            padding-top: 24px;
+            padding-left: 48px;
+            box-sizing: border-box;
+            padding-right: 48px;
+            padding-bottom: 0;
+        }
 
+        @media (width >= 1900px) {
+            width: 872px;
+            padding-top: 30px;
+            padding-left: 100px;
+            padding-right: 110px;
+            padding-bottom: 0;
+
+        }
     }
 
     &__title {

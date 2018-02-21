@@ -73,6 +73,53 @@ ul, li {
     left: -9999px;
 }
 
+.input {
+    &--light {
+        color: var(--dark-color-font);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0;
+        padding-right: 0;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 1px solid var(--dark-color-font);
+
+        &:focus {
+            outline: none;
+            border-bottom: 1px solid var(--style-color);
+        }
+
+        &::-webkit-input-placeholder {
+            text-transform: lowercase;
+            font-size: 18px;
+            font-weight: 100;
+            color: #959a9d;
+        }
+
+        &::-moz-placeholder {
+            text-transform: lowercase;
+            font-size: 18px;
+            font-weight: 100;
+            color: #959a9d;
+        }
+
+        &:-ms-input-placeholder {
+            text-transform: lowercase;
+            font-size: 18px;
+            font-weight: 100;
+            color: #959a9d;
+        }
+
+        &:-moz-placeholder {
+            text-transform: lowercase;
+            font-size: 18px;
+            font-weight: 100;
+            color: #959a9d;
+        }
+    }
+}
+
 .button {
     width: 100%;
     text-transform: uppercase;
@@ -574,6 +621,7 @@ ul, li {
 
 .call-master {
     flex-direction: column;
+    background-color: inherit;
 
     @media (width >= 1900px) {
         flex-direction: row;
@@ -581,51 +629,8 @@ ul, li {
     }
 
     &__input {
-        color: var(--dark-color-font);
         margin-bottom: 35px;
-        background-color: inherit;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 0;
-        padding-right: 0;
-        border-left: none;
-        border-right: none;
-        border-top: none;
-        border-bottom: 1px solid var(--dark-color-font);
         display: none;
-
-        &:focus {
-            outline: none;
-            border-bottom: 1px solid var(--style-color);
-        }
-
-        &::-webkit-input-placeholder {
-            text-transform: lowercase;
-            font-size: 18px;
-            font-weight: 100;
-            color: #959a9d;
-        }
-
-        &::-moz-placeholder {
-            text-transform: lowercase;
-            font-size: 18px;
-            font-weight: 100;
-            color: #959a9d;
-        }
-
-        &:-ms-input-placeholder {
-            text-transform: lowercase;
-            font-size: 18px;
-            font-weight: 100;
-            color: #959a9d;
-        }
-
-        &:-moz-placeholder {
-            text-transform: lowercase;
-            font-size: 18px;
-            font-weight: 100;
-            color: #959a9d;
-        }
 
         @media (width >= 1024px) {
             width: 320px;
@@ -1794,13 +1799,9 @@ ul, li {
             position: relative;
 
             @media (width >= 1200px) {
-                //height: 602px;
-                //justify-content: flex-end;
-                //padding-right: 50px;
             }
 
             @media (width >= 1900px) {
-                //height: 581px;
             }
         }
 
@@ -1993,7 +1994,7 @@ ul, li {
         pointer-events: none;
 
         @media (width >= 1024px) {
-            top: -100px;
+            top: -10px;
             margin-right: 0;
         }
 
@@ -2119,6 +2120,150 @@ ul, li {
         color: rgba(0, 0, 0, 0.74);
     }
 }
+
+.popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .59);
+    z-index: 88;
+
+    &--hidden {
+        display: none;
+    }
+
+    &__shape {
+        width: 555px;
+        height: 480px;
+        background-color: var(--light-color);
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+        box-sizing: border-box;
+        z-index: 99;
+    }
+
+    &__close {
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        right: 20px;
+        top: 18px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+
+        &--dark {
+            background-image: url(img/icon-close-dark-popup.svg);
+        }
+
+        &--light {
+            background-image: url(img/icon-close-light-popup.svg);
+        }
+    }
+}
+
+.consult {
+    text-align: center;
+
+    &__title {
+        font-family: var(--style-font);
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+    }
+
+    &__input {
+        &:last-of-type {
+            margin-bottom: 33px;
+        }
+    }
+
+    &__button {
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        font-family: var(--main-font);
+        font-size: 13px;
+        color: #bbbbba;
+        line-height: 1.5;
+    }
+
+    & .popup__shape {
+        padding-left: 115px;
+        padding-right: 120px;
+        padding-top: 77px;
+    }
+}
+
+.thanks {
+    color: var(--light-color);
+
+    & .popup__shape {
+        background-image: url(img/thanks-back.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-left: 135px;
+        padding-right: 125px;
+        padding-top: 93px;
+        text-align: center;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-image: url(img/icon-thanks.svg);
+            background-repeat: no-repeat;
+            background-size: 230%;
+            background-position: center center;
+            opacity: .06;
+            pointer-events: none;
+        }
+    }
+
+    &__img {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 35px;
+    }
+
+    &__title {
+        font-family: var(--style-font);
+        font-size: 36px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    &__text {
+        font-family: var(--secondary-font);
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+
 
 .ui-accordion 
 .ui-accordion-header {

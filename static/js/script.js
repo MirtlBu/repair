@@ -12,6 +12,13 @@ $(function() {
         }
     });
 
+    function ClosePopup(e) {
+        console.log(e);
+        e.target.parentNode.parentNode.classList.add('popup--hidden');
+    }
+    const icons_close = Array.from(document.querySelectorAll('.popup__close'));
+    icons_close.forEach(icon => icon.addEventListener('click', ClosePopup));
+
     $( "#accordion" ).accordion();
 
 })

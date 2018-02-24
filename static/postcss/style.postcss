@@ -46,11 +46,6 @@ ul, li {
     }
 }
 
-
-/* .input:focus, .textarea:focus {
-    outline: 4px dotted #000;
-} */
-
 .flexbox {
     display: flex;
 
@@ -126,7 +121,6 @@ ul, li {
     font-size: 16px;
     font-family: var(--style-font);
     font-weight: 600;
-    border: 1px solid transparent;
     border-radius: 2px;
     position: relative;
     z-index: 0;
@@ -136,6 +130,7 @@ ul, li {
     padding-right: 0;
     cursor: pointer;
     -webkit-font-smoothing: antialiased;
+    border: 1px solid #fff;
 
     &:hover {
         box-shadow: 0px 16px 38px 0px rgba(68, 81, 69, 0.27);
@@ -268,10 +263,6 @@ ul, li {
                 height: 117px;
             }
         }
-
-        @media (width >= 1024px) {
-            //padding-left: 63px;
-        }
     }
 }
 
@@ -356,6 +347,14 @@ ul, li {
     &__img {
         @media (width >= 768px) {
             display: none;
+        }
+    }
+
+    &__link {
+        margin-right: 10px;
+
+        @media (width >= 1900px) {
+            margin-right: 0;
         }
     }
 }
@@ -514,7 +513,6 @@ ul, li {
 
             @media (width >= 1024px) {
                 padding-left: 48px;
-                //padding-top: 32px;
             }
 
             @media (width >= 1200px) {
@@ -950,7 +948,12 @@ ul, li {
 
     @media (width >= 1200px) {
         flex-direction: row;
-        padding-top: 159px;
+        padding-top: 120px;
+    }
+
+    @media (width >= 1900px) {
+        padding-top: 160px;
+        padding-bottom: 210px;
     }
 }
 
@@ -1004,12 +1007,6 @@ ul, li {
                 margin-bottom: 0px;
             }
         }
-
-        /* &:nth-last-child(-n+2) {
-            @media (width >= 1900px) {
-                margin-bottom: 55px;
-            }
-        } */
     }
 
     &__items {
@@ -1083,12 +1080,6 @@ ul, li {
                 margin-right: 0px;
             }
         }
-
-        /* &:nth-child(-n+2) {
-            @media (width >= 1200px) {
-                margin-right: 10px;
-            }
-        } */
 
         &:not(:nth-child(-n+3)) {
             @media (width >= 1370px) {
@@ -1272,16 +1263,16 @@ ul, li {
         justify-content: flex-end;
         padding-bottom: 0;
         z-index: 0;
-        padding-right: 24px;
     }
 
     @media (width >= 1200px) {
+        padding-right: 24px;
         padding-top: 98px;
         background-color: transparent;
     }
 
     @media (width >= 1900px) {
-        padding-right: 155px;
+        padding-right: 0px;
         padding-top: 80px;
         //padding-bottom: 130px;
     }
@@ -1323,7 +1314,11 @@ ul, li {
         }
 
         @media (width >= 1900px) {
+            top: 0;
+            left: 0;
             background-size: 87%;
+            height: 83%;
+            width: 88%;
         }
     }
 
@@ -1380,9 +1375,10 @@ ul, li {
         }
 
         @media (width >= 1900px) {
-            width: 766px;
+            width: 775px;
             margin-top: 20px;
-            margin-right: 110px;
+            margin-right: 180px;
+            padding-bottom: 37px;
         }
     }
 
@@ -1396,7 +1392,7 @@ ul, li {
         }
 
         @media (width >= 1900px) {
-            width: 1418px;
+            width: 1466px;
         }
 
         &:after {
@@ -1439,14 +1435,14 @@ ul, li {
 
             @media (width >= 1200px) {
                 background-image: url(img/handleguy-cloack-part.png);
-                background-position: -10px 78px;
+                background-position: -10px 80px;
                 background-size: 1176px;
             }
 
             @media (width >= 1900px) {
                 background-image: url(img/handleguy.png);
                 background-position: 205px 0px;
-                background-size: 94%;
+                background-size: 89%;
             }
         }
     }
@@ -1577,6 +1573,7 @@ ul, li {
         @media (width >= 1900px) {
             margin-left: auto;
             margin-right: 0;
+            margin-top: 0;
         }
     }
 
@@ -1632,9 +1629,9 @@ ul, li {
         }
     }
 
-    &__file:focus ~ &__tip &__dotted {
+    /* &__file:focus ~ &__tip &__dotted {
         outline: 4px dotted #000;
-    }
+    } */
 
     &__text {
         margin-bottom: 36px;
@@ -1654,6 +1651,10 @@ ul, li {
 
         @media (width >= 1024px) {
             margin-left: -23px;
+        }
+
+        @media (width >= 1900px) {
+            margin-bottom: 0;
         }
     }
 
@@ -1675,6 +1676,14 @@ ul, li {
         position: relative;
         flex-direction: row;
     }
+
+    @media (width >= 1200px) {
+        padding-top: 110px;
+    }
+
+    @media (width >= 1900px) {
+        padding-top: 0;
+    }
 }
 
 .four {
@@ -1685,8 +1694,12 @@ ul, li {
         padding-top: 80px;
     }
 
-    @media (width >= 1024px) {
-        padding-top: 108px;
+    @media (width >= 1200px) {
+        padding-top: 160px;
+    }
+
+    @media (width >= 1900px) {
+        padding-top: 210px;
     }
 
     &__left {
@@ -1695,15 +1708,14 @@ ul, li {
         box-sizing: border-box;
 
         @media (width >= 1024px) {
-            width: 39%;
+            width: 42%;
             padding-left: 0;
             padding-right: 0;
         }
 
         @media (width >= 1900px) {
-            width: 42%;
             padding-left: 0px;
-            padding-top: 135px;
+            padding-top: 140px;
             padding-right: 0px;
         }
 
@@ -1712,14 +1724,18 @@ ul, li {
 
             @media (width >= 1024px) {
                 padding-left: 48px;
-                padding-bottom: 255px;
-                padding-top: 255px;
+                padding-top: 235px;
+                padding-bottom: 320px;
+            }
+
+            @media (width >= 1200px) {
+                padding-bottom: 235px;
             }
 
             @media (width >= 1900px) {
                 padding-top: 15px;
                 padding-left: 178px;
-                padding-bottom: 130px;
+                padding-bottom: 125px;
             }
 
             &:after {
@@ -1728,12 +1744,12 @@ ul, li {
                 width: 100%;
                 height: 100%;
                 top: -7%;
-                right: -27%;
+                right: 5%;
                 background-image: url(img/gear-opacity.png);
                 background-repeat: no-repeat;
                 background-position: bottom right;
 
-                @media (width >= 1024px) {
+                @media (width >= 1200px) {
                     content: '';
                 }
             }
@@ -1776,7 +1792,7 @@ ul, li {
 
                 @media (width >= 1900px) {
                     width: calc(100% + 245px);
-                    height: calc(100% + -4px);
+                    height: calc(100% + 4px);
                     top: -5px;
                 }
 
@@ -1793,25 +1809,6 @@ ul, li {
 
         @media (width >= 1900px) {
             padding-top: 40px;
-        }
-
-        &-top {
-            position: relative;
-
-            @media (width >= 1200px) {
-            }
-
-            @media (width >= 1900px) {
-            }
-        }
-
-        &-bottom {
-            position: relative;
-
-            @media (width >= 1200px) {
-                top: 27%;
-                left: 31%;
-            }
         }
     }
 }
@@ -1886,13 +1883,17 @@ ul, li {
     padding-bottom: 20px;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
+
+    @media (width >= 1024px) {
+        padding-bottom: 0px;
+        padding-top: 230px;
+        padding-left: 270px;
+        align-items: flex-end;
+    }
 
     @media (width >= 1900px) {
-        padding-bottom: 0px;
-        /* position: absolute;
-        top: 230px; */
-        left: 30%;
-        width: 57%;
+        padding-left: 370px;
     }
 
     &__copyrights {
@@ -1903,6 +1904,14 @@ ul, li {
 
     &__social {
         position: relative;
+
+        @media (width >= 1200px) {
+            flex-basis: 88px;
+        }
+
+        @media (width >= 1900px) {
+            flex-basis: 127px;
+        }
     }
 
     &__icon {
@@ -1930,6 +1939,8 @@ ul, li {
 
         @media (width >= 1200px) {
             display: block;
+            top: -87px;
+            left: -47px;
         }
     }
 }
@@ -1949,28 +1960,30 @@ ul, li {
 
         @media (width >= 1024px) {
             margin-top: 0px;
-            padding-top: 13px;
-            padding-bottom: 95px;
+            padding-top: 80px;
+            padding-bottom: 195px;
+            padding-left: 55px;
+            padding-right: 110px;
+            width: 600px;
         }
 
         @media (width >= 1200px) {
-            min-height: 525px;
-            width: 76%;
+            height: 692px;
+            width: 540px;
             display: inline-block;
             vertical-align: top;
-            margin-left: -15.1%;
+            margin-left: -119px;
             padding-top: 80px;
-            padding-left: 55px;
-            padding-right: 110px;
             padding-bottom: 49px;
         }
 
         @media (width >= 1900px) {
             min-height: auto;
-            width: 866px;
+            width: 874px;
             height: 510px;
             overflow: scroll;
             padding-left: 100px;
+            margin-left: -164px;
         }
     }
 
@@ -1994,21 +2007,30 @@ ul, li {
         pointer-events: none;
 
         @media (width >= 1024px) {
-            top: -10px;
+            width: 600px;
+            height: 145px;
+            top: auto;
             margin-right: 0;
+            position: absolute;
+            bottom: 0;
+            padding-right: 25px;
         }
 
         @media (width >= 1200px) {
-            width: 34%;
+            position: relative;
+            width: 265px;
+            height: auto;
             display: inline-block;
-            top: auto;
-            bottom: -309px;
+            bottom: -272px;
             min-height: 420px;
-            padding-top: 306px;
+            padding-top: 320px;
             z-index: 1;
+            padding-right: 50px;
         }
 
         @media (width >= 1900px) {
+            padding-top: 306px;
+            width: 370px;
             bottom: -160px;
         }
 
@@ -2033,21 +2055,18 @@ ul, li {
             }
 
             @media (width >= 1024px) {
-                transform: scaleX(1);
-                width: 33%;
-                background-image: url(img/rect-2.svg);
+                transform: rotate(180deg);
+                width: 100%;
                 background-size: 100%;
-                bottom: 27%;
-                z-index: 1;
+                z-index: -1;
                 bottom: 0;
                 height: 100%;
-                background-position: bottom 0px left;
+                background-position: bottom -60px left;
             }
 
             @media (width >= 1200px) {
-                width: 100%;
-                bottom: 0;
-                height: 100%;
+                transform: rotate(0deg);
+                background-image: url(img/rect-2.svg);
                 background-position: bottom 0px left;
                 z-index: -1;
             }
@@ -2110,6 +2129,7 @@ ul, li {
     }
 
     &__text {
+        height: auto !important;
         padding-left: 63px !important;
         opacity: 0.74;
         font-family: var(--secondary-font);
@@ -2131,23 +2151,29 @@ ul, li {
     right: 0;
     background-color: rgba(0, 0, 0, .59);
     z-index: 88;
+    box-sizing: border-box;
 
     &--hidden {
         display: none;
     }
 
     &__shape {
-        width: 555px;
-        height: 480px;
+        width: 90%;
+        height: 90%;
         background-color: var(--light-color);
         position: absolute;
         left: 0;
         right: 0;
         margin: 0 auto;
-        top: 50%;
-        transform: translateY(-50%);
         box-sizing: border-box;
         z-index: 99;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @media (width >= 768px) {
+            width: 555px;
+            height: 480px;
+        }
     }
 
     &__close {
@@ -2187,6 +2213,7 @@ ul, li {
     }
 
     &__input {
+
         &:last-of-type {
             margin-bottom: 33px;
         }
@@ -2204,9 +2231,15 @@ ul, li {
     }
 
     & .popup__shape {
-        padding-left: 115px;
-        padding-right: 120px;
-        padding-top: 77px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 25%;
+
+        @media (width >= 768px) {
+            padding-left: 115px;
+            padding-right: 120px;
+            padding-top: 77px;
+        }
     }
 }
 
@@ -2217,11 +2250,17 @@ ul, li {
         background-image: url(img/thanks-back.png);
         background-repeat: no-repeat;
         background-size: cover;
-        padding-left: 135px;
-        padding-right: 125px;
-        padding-top: 93px;
         text-align: center;
         position: relative;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 25%;
+
+        @media (width >= 768px) {
+            padding-left: 135px;
+            padding-right: 125px;
+            padding-top: 93px;
+        }
 
         &:after {
             content: '';

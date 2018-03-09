@@ -21,4 +21,15 @@ $(function() {
 
     $( "#accordion" ).accordion();
 
+    window.onresize = function(event) {
+        var $fotoramaDiv = $('.fotorama').fotorama();
+        var fotorama = $fotoramaDiv.data('fotorama');
+        console.log($('.fotorama').width());
+        // fotorama.resize({
+        //   width: $('.fotorama').width(),
+        //   height: $('.fotorama').height()
+        // });
+
+    };
+
 })
